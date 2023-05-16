@@ -1,0 +1,23 @@
+<!-- Portada -->
+
+<div class="container-fluid">
+  <img src="https://www.faplaconline.com.ar/home/medias/AR-303TXT-MEL-base-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxNjIzN3xpbWFnZS9qcGVnfGFESTJMMmcxWXk4NE9ERTJPRGc1TkRZeU9ERTBMMEZTWHpNd00xUllWRjlOUlV4ZlltRnpaVjh4TWpBd1YzZ3hNakF3U0F8MTczYzZiNDEzNWIwNTFlZGYxMzM2NTYxNDk5YjQ3YTg0MjY2MmQxZWUyYzBiM2FkMjkzMWFlM2FjMTY2NjIyOQ" alt="Banner Negro" height="400px" width="100%" class="Portada" >
+</div>
+
+<div class="container-xl" id="Acerca-de" *ngFor="let data of educacion">
+
+    <ul class="Lista">
+      <li> <img class="Foto-Perfil" src="{{data.fotorul}}" alt="Foto de Perfil" width="340" height="380">
+      </li>
+
+      <li class="Acerca" > 
+          <h1 class="display-6"> Acerca de </h1>
+          <div>
+            <p> {{data.nombre}} </p> <br>
+            <p> {{data.informacion}} </p> <br>
+            <p> {{data.titulo}} </p> <br>
+          </div>
+           
+      </li>
+    </ul>
+  </div>
